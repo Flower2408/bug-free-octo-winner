@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DP Chemistry Revision Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1>DP Chemistry Revision Hub</h1>
+      <a class="btn" href="#quiz">Start a Quick Quiz</a>
+    </nav>
+    <div class="hero-content">
+      <h2>Master IB DP Chemistry with focused, active revision.</h2>
+      <p>Use topic checklists, concise summaries, and retrieval practice to prepare for SL and HL assessments.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" id="plan">
+      <h3>Weekly Revision Planner</h3>
+      <div class="grid two-col">
+        <article>
+          <h4>Core Topics</h4>
+          <ul class="checklist">
+            <li><label><input type="checkbox" /> Stoichiometric relationships</label></li>
+            <li><label><input type="checkbox" /> Atomic structure</label></li>
+            <li><label><input type="checkbox" /> Periodicity</label></li>
+            <li><label><input type="checkbox" /> Bonding and structure</label></li>
+            <li><label><input type="checkbox" /> Energetics and thermochemistry</label></li>
+            <li><label><input type="checkbox" /> Kinetics</label></li>
+            <li><label><input type="checkbox" /> Equilibrium</label></li>
+          </ul>
+        </article>
+        <article>
+          <h4>AHL Focus</h4>
+          <ul class="checklist">
+            <li><label><input type="checkbox" /> Acids & bases extension</label></li>
+            <li><label><input type="checkbox" /> Redox processes extension</label></li>
+            <li><label><input type="checkbox" /> Organic chemistry extension</label></li>
+            <li><label><input type="checkbox" /> Spectroscopic analysis</label></li>
+          </ul>
+          <p class="tip">Tip: Aim for 3 topics per week + 1 mixed-paper session.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="cards">
+      <h3>Rapid Revision Cards</h3>
+      <div class="grid cards">
+        <button class="flashcard" data-answer="Increase concentration, increase temperature, increase surface area, and add a catalyst.">
+          <span>How can you increase reaction rate?</span>
+        </button>
+        <button class="flashcard" data-answer="A lower pKa value means a stronger acid (greater tendency to donate H+).">
+          <span>What does a lower pKa indicate?</span>
+        </button>
+        <button class="flashcard" data-answer="Electrophiles accept electron pairs, while nucleophiles donate electron pairs.">
+          <span>Electrophile vs nucleophile?</span>
+        </button>
+      </div>
+      <p id="card-answer" class="answer">Click a card to reveal the answer.</p>
+    </section>
+
+    <section class="panel" id="quiz">
+      <h3>Mini Retrieval Quiz</h3>
+      <form id="quiz-form">
+        <article class="question">
+          <p>1) Which statement about endothermic reactions is correct?</p>
+          <label><input type="radio" name="q1" value="a"> ΔH is negative and heat is released.</label>
+          <label><input type="radio" name="q1" value="b"> ΔH is positive and heat is absorbed.</label>
+          <label><input type="radio" name="q1" value="c"> Products always have lower enthalpy.</label>
+        </article>
+        <article class="question">
+          <p>2) At equilibrium in a closed system:</p>
+          <label><input type="radio" name="q2" value="a"> Reactants are fully consumed.</label>
+          <label><input type="radio" name="q2" value="b"> Forward reaction stops completely.</label>
+          <label><input type="radio" name="q2" value="c"> Forward and reverse rates are equal.</label>
+        </article>
+        <article class="question">
+          <p>3) Which species is reduced in: CuO + H₂ → Cu + H₂O?</p>
+          <label><input type="radio" name="q3" value="a"> CuO</label>
+          <label><input type="radio" name="q3" value="b"> H₂</label>
+          <label><input type="radio" name="q3" value="c"> H₂O</label>
+        </article>
+        <button type="submit" class="btn">Check Score</button>
+      </form>
+      <p id="score-output" class="answer"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for DP Chemistry revision: concise, active, and exam-focused.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

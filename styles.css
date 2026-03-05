@@ -1,0 +1,137 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --accent: #22d3ee;
+  --muted: #94a3b8;
+  --ok: #4ade80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, sans-serif;
+  background: linear-gradient(180deg, #020617 0%, var(--bg) 35%, #0b1120 100%);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.hero {
+  padding: 1.5rem 1.25rem 2rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  margin: 0;
+}
+
+.hero-content {
+  max-width: 750px;
+  margin-top: 1rem;
+}
+
+.hero-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.panel {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.cards {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.btn {
+  background: var(--accent);
+  border: none;
+  color: #06202a;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist li {
+  margin: 0.5rem 0;
+}
+
+.tip {
+  color: var(--muted);
+  margin-top: 0.8rem;
+}
+
+.flashcard {
+  border: 1px solid #334155;
+  background: #0b1220;
+  color: var(--text);
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  min-height: 100px;
+}
+
+.flashcard:hover {
+  border-color: var(--accent);
+}
+
+.question {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.question label {
+  display: block;
+  margin: 0.3rem 0;
+}
+
+.answer {
+  margin-top: 0.8rem;
+  color: var(--ok);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 1.2rem;
+}
